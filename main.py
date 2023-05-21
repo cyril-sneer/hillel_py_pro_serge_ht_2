@@ -21,9 +21,9 @@ def requirements():
                                  req_list=funcs.get_text_file(txt_file_name='requirements.txt'))
 
 
-@app.route('/generate-users/')  # Fake users list
+@app.route('/generate-users/', methods=['GET', 'POST'])  # Fake users list
 def generate_users():
-    quantity = flask.request.args.get('count', 100)  # get the <count> parameter from URL-string
+    quantity = flask.request.args.get('count', 100)  # get the "count" query-parameter from URL-string
     return flask.render_template('generate_users.html',
                                  title='Users list',
                                  users_list=funcs.get_fake_users(quantity=int(quantity)))

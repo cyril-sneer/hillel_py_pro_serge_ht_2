@@ -5,11 +5,21 @@
     <title>{{title}}</title>
 </head>
 <body>
+
 <h3>Index:</h3>
+
 <a href="requirements/">Project requirements</a><br><br>
-<a href="generate-users/?count=100">Users list</a>
-(100 as default). You can change the quantity in the url string <br><br>
+
+<form action="generate-users/" method="get">
+    <label for="qty"> User list. Choose qty pls:
+        <input id="qty" name="count" type="number" value="10">
+    </label>
+    <input type="submit">
+</form><br>
+
 <a href="mean/">Average height and weight</a> <br><br>
+
 <a href="space/">Quantity of astronauts</a><br><br>
+
 </body>
 </html>
