@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+<a href="/">back to index</a><br>
+<h3>
+    The project requirements are:
+</h3>
+<ul>
+    {% for line in req_list %}
+    <li>{{line}}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
