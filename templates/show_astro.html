@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+<a href="/">back to index</a><br>
+
+<br>
+Actual quantity of astronauts is {{astro_qty}} people<br><br>
+They are:<br>
+
+<ul>
+    {% for astro_name in astro_names %}
+    <li>{{astro_name}}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

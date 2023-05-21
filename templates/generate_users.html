@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+<a href="/">back to index</a><br>
+<h3>
+    Users list:
+</h3>
+<ul>
+    {% for user in users_list %}
+    <li>{{user}}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
